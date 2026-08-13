@@ -45,6 +45,10 @@ du -sh "$REPO"
 
 # --- git -------------------------------------------------------------------
 cd "$REPO"
+# Clean stale lock/temp files left by the initial commit (made in a sandbox
+# that could not delete files).
+rm -f .git/*.lock .git/objects/maintenance.lock
+find .git/objects -name 'tmp_obj_*' -delete 2>/dev/null || true
 git add -A
 git commit -m "Add OpenFOAM case trees (0/, constant/, system/, postProcessing/)" || true
 git push -u origin main

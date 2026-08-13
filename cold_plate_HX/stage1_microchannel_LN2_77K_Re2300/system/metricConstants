@@ -1,0 +1,16 @@
+CASE_NAME=stage1_microchannel_LN2_77K_Re2300
+FLUID_NAME="LN2_77K"
+Lflow=0.3
+Dh=0.01
+Acs=0.0005
+Aheated=0.015
+Qwall_W=9.4
+k_W_mK=0.1396
+rho_kg_m3=807
+cp_J_kgK=2042
+mu_Pa_s=1.61e-4
+nu_m2_s=2.0e-7
+beta_1_K=5.7e-3
+Pr=2.36
+TRef_K=77
+CarnotCOP=0.34529148

@@ -17,3 +17,9 @@ Each case folder carries `metrics.csv` (full converged metric set),
 `egm_lax.csv` (entropy-generation / axial-conduction), `Nu_f_report.txt`,
 and `GATE_CHECK.txt`. Case dictionaries (`0/`, `constant/`, `system/`) are
 added by `finish_repo.sh` (see repo root) or on request.
+
+**Naming note.** `Buoyancy_50K_Microchannel_Re2300` is the **helium**
+case and, despite the historical folder name, is solved with the
+*compressible variable-density* model (not Boussinesq) and uses
+conventional-scale channels (D_h = 10 mm); see `metrics.csv` (`model`
+column) and the paper, Sec. 2.2.
