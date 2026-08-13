@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this material, please cite the paper below."
+title: >-
+  Support material: Pre-cooling a superconducting-qubit dilution
+  refrigerator — cascade heat-budget penalty and helium-versus-nitrogen
+  cold-plate coolant selection by CFD
+authors:
+  - family-names: Joao
+    given-names: Imerson
+    email: ifnj2@cantab.ac.uk
+    affiliation: Department of Engineering Science, University of Oxford
+repository-code: >-
+  https://github.com/Imerson/Pre-cooling-a-superconducting-qubit-dilution-refrigerator
+license: MIT
+preferred-citation:
+  type: article
+  title: >-
+    Pre-cooling a superconducting-qubit dilution refrigerator: cascade
+    heat-budget penalty and helium-versus-nitrogen cold-plate coolant
+    selection by CFD
+  authors:
+    - family-names: Joao
+      given-names: Imerson
+  journal: Cryogenics
+  year: 2026
+  notes: Submitted.

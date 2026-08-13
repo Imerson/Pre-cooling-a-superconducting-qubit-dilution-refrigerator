@@ -1,0 +1,2 @@
+case,fluid,Re,axial_Peclet,lambda_ax,Sgen_thermal_WK,Sgen_viscous_WK,Sgen_total_WK,Bejan_irrev,exergy_W
+stage1_microchannel_LN2_77K_Re2300,LN2_77K,2305.71,5441.48,0.000183774,0.0012340166,3.0276365e-07,0.00123432,0.999754,0.370296

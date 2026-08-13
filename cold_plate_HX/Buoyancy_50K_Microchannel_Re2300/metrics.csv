@@ -1,0 +1,2 @@
+case,fluid,model,Q_W,Re,Nu,f_Darcy,Nu_over_Nuinf,fRe,fRe_over_56p9,Nu_over_f,PF,St,j,j_over_f,Mo,NTU,eps,Lt_over_L,Be,Wpump_W,dP_Pa,h_W_m2K,mdot_kg_s,Tw_K,Tb_K,dTcool_K,rho_ratio,beta_dT_wall,Qrem_W,ebal_pct,nCells
+Buoyancy_50K_Microchannel_Re2300,He_50K,compressible,9.4,2300,13.886,0.0798295,3.84654,183.608,3.22685,173.946,32.2495,0.00788171,0.00659842,0.0826564,470.017,0.236452,0.210576,2.93633,4.36699e+09,0.000142556,0.463,25.6998,0.00031395,7.24156064e+01,48.0315,6.06302,1.13474,0.487682,9.8848,5.15745,291600

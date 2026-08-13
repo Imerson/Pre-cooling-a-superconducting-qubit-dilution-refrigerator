@@ -1,0 +1,2 @@
+case,fluid,model,Q_W,Re,Nu,f_Darcy,Nu_over_Nuinf,fRe,fRe_over_56p9,Nu_over_f,PF,St,j,j_over_f,Mo,NTU,eps,Lt_over_L,Be,Wpump_W,dP_Pa,h_W_m2K,mdot_kg_s,Tw_K,Tb_K,dTcool_K,rho_ratio,beta_dT_wall,Qrem_W,ebal_pct,nCells
+stage1_microchannel_LN2_77K_Re2300,LN2_77K,boussinesq,9.4,2305.71,33.0175,0.116224,9.14612,267.979,4.70965,284.085,67.6569,0.00606775,0.0107556,0.092542,45052.8,0.182416,0.166745,9.06913,1.96442e+10,6.84703e-05,2.97697,460.924,0.018561,7.84865880e+01,77.127,0.254,1,0.00774965,9.627,2.41489,291600

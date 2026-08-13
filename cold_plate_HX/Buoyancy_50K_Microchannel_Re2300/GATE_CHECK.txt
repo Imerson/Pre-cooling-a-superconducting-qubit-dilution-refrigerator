@@ -1,0 +1,15 @@
+GATE CHECK (QA / sanity): He_graded
+  model=compressible  Re=2300  Nu=13.89  h=25.7 W/m2K  Q=9.4 W
+======================================================================
+  [PASS] solver_completed           log ends 'End'=True, FATAL=False
+  [PASS] duty_correct_9p4W          Q_wall=9.4 W
+  [PASS] energy_balance_<6pct       err=5.16% (Qrem=9.8848 W)
+  [PASS] Re_on_target_2300          Re=2300.0
+  [PASS] steady_state_<0.1pct       TWall range/mean over last10=5.51e-05
+  [PASS] model_appropriate          compressible variable-density (rho_ratio=1.13474); Boussinesq limit N/A
+  [PASS] validation_Nu>=Nuinf       Nu/Nu_inf=3.85 (developing => >1)
+  [PASS] validation_fRe_band        fRe/56.9=3.23 (1-6 developing duct, resolved)
+  [PASS] physicality                Tw>Tb=True, 0<eps<1=True, h>0,f>0
+  [PASS] mesh_present               nCells=291600 (GCI mesh-independence: PENDING, see caveats)
+----------------------------------------------------------------------
+  10/10 gates passed

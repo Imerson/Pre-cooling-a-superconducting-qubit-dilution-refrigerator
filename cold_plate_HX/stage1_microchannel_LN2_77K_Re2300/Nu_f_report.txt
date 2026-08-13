@@ -1,0 +1,40 @@
+=====================================================================
+ Consolidated metrics report  (true SI units, no manual corrections)
+ Case:  stage1_microchannel_LN2_77K_Re2300      Fluid: LN2_77K
+ Geometry: mini-channel (Dh=0.01 m = 10 mm; Kandlikar mini, NOT micro)
+ Heat duty Q_wall: 9.4 W (matched-duty He-vs-N2 basis; Stage-1 load ~9.4 W)
+ Flow model: incompressible Boussinesq (beta*dT<<1 valid)
+=====================================================================
+--- raw CFD ---
+Tin_K: 7.70000000e+01  Tout_bulk_K: 7.72539995e+01  Tout_area_K: 7.74074023e+01  Tw_K: 7.84865880e+01  Tb_K: 77.127
+dP_Pa(true): 2.97697  Umean_m_s: 0.046  mdot_kg_s: 0.018561  Qvol_m3_s: 2.3e-05
+rho_in: 807  rho_out: 807  rho_ratio_in_out: 1
+--- dimensional ---
+h_W_m2K: 460.924  Wpump_W(true): 6.84703e-05  wall_superheat_Tw_minus_Tb_K: 1.35959
+--- core dimensionless ---
+Re: 2305.71  Nu: 33.0175  f_Darcy: 0.116224  Nu_over_f: 284.085  PF_Nu_f13: 67.6569
+St: 0.00606775  Colburn_j: 0.0107556  j_over_f: 0.092542  Mouromtseff_Mo: 45052.8
+--- HX effectiveness (single-stream isothermal-wall limit) ---
+NTU: 0.182416  effectiveness_eps: 0.166745
+--- validation (Shah & London, square duct, const-q: Nu_inf=3.61, fRe=56.9) ---
+Nu_over_Nuinf: 9.14612  fRe_Darcy: 267.979  fRe_over_56p9: 4.70965
+--- thermal entry length (Graetz) ---
+Lt_m: 2.72074  Lt_over_L: 9.06913
+--- convective Bejan ---
+Convec_Bejan: 1.96442e+10
+--- entropy generation (EGM) ---
+Irrev_Bejan: NA (out of scope, guideline 2.4)   W_exergy_loss_W: NA
+--- density / Boussinesq diagnostic ---
+rho_ratio_in_out: 1  beta_dT_wall_to_bulk: 0.00774965  beta_dT_coolant: 0.0014478
+--- energy balance ---
+Q_removed_W: 9.627  energy_balance_error_pct: 2.41489
+--- provenance ---
+solver: buoyantBoussinesqSimpleFoam (laminar)  OF: openfoam2412
+nCells: 291600  last_time: 6000  final_resid_Ux: 0.00025072802  T_or_h: 0.00018129028  p_rgh: 0.00013792317
+Carnot_COP: 0.34529148
+=====================================================================
+--- axial conduction (fluid) ---
+axial_Peclet_Dh: 5441.48   axial_Peclet_L: 163244   lambda_ax_1overPe: 0.000183774   (<<1 => axial conduction negligible)
+--- EGM / entropy generation (domain integral, converged fields) ---
+Sgen_thermal_WperK: 0.0012340166   Sgen_viscous_WperK: 3.0276365e-07   Sgen_total_WperK: 0.00123432
+Bejan_irreversibility_thermal_frac: 0.999754   exergy_destruction_W(T0=300K): 0.370296

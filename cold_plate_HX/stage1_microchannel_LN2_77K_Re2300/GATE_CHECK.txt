@@ -1,0 +1,15 @@
+GATE CHECK (QA / sanity): LN2_graded
+  model=boussinesq  Re=2306  Nu=33.02  h=460.9 W/m2K  Q=9.4 W
+======================================================================
+  [PASS] solver_completed           log ends 'End'=True, FATAL=False
+  [PASS] duty_correct_9p4W          Q_wall=9.4 W
+  [PASS] energy_balance_<6pct       err=2.41% (Qrem=9.627 W)
+  [PASS] Re_on_target_2300          Re=2305.7
+  [PASS] steady_state_<0.1pct       TWall range/mean over last10=6.51e-07
+  [PASS] model_appropriate          Boussinesq: beta*dT_wall=0.008 (<0.1 valid)
+  [PASS] validation_Nu>=Nuinf       Nu/Nu_inf=9.15 (developing => >1)
+  [PASS] validation_fRe_band        fRe/56.9=4.71 (1-6 developing duct, resolved)
+  [PASS] physicality                Tw>Tb=True, 0<eps<1=True, h>0,f>0
+  [PASS] mesh_present               nCells=291600 (GCI mesh-independence: PENDING, see caveats)
+----------------------------------------------------------------------
+  10/10 gates passed

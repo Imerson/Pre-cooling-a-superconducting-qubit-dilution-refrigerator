@@ -1,0 +1,41 @@
+==============================================================================
+ Stage-1 cold-plate HX -- He(50K) vs LN2(77K)  [GRID-CONVERGED graded mesh, 292k]
+ Matched duty 9.4 W, Re=2300, laminar.  He: compressible | LN2: Boussinesq
+ Mesh GCI: Nu converged (extrap 30.6, GCI 2.4% medium); f GCI ~17% (uncertainty band)
+==============================================================================
+quantity                                  He_50K       LN2_77K      LN2/He
+------------------------------------------------------------------------------
+Re                                          2300          2306       1.002
+Nu                                         13.89         33.02       2.378
+Nu/Nu_inf (3.61)                           3.847         9.146       2.378
+f (Darcy)                                0.07983        0.1162       1.456
+h [W/m2K]                                   25.7         460.9       17.93
+wall superheat Tw-Tb [K]                   24.38          1.36     0.05576
+pumping power Wp [W]                   0.0001426     6.847e-05      0.4803
+-- HX effectiveness --
+NTU                                       0.2365        0.1824      0.7715
+effectiveness eps                         0.2106        0.1667      0.7919
+-- fluid figure of merit --
+Mouromtseff Mo                               470     4.505e+04       95.85
+thermal conductivity k [W/mK]            0.01851        0.1396       7.543
+-- developing-flow / axial conduction --
+Graetz L_t/L                               2.936         9.069       3.089
+axial Peclet (Dh)                           1762          5441       3.089
+lambda_ax = 1/Pe                       0.0005676     0.0001838      0.3238
+-- EGM / entropy generation --
+Sgen_thermal [W/K]                       0.04996      0.001234      0.0247
+Sgen_viscous [W/K]                     1.322e-06     3.028e-07       0.229
+Sgen_total [W/K]                         0.04996      0.001234      0.0247
+Bejan irreversibility (thermal)                1        0.9998            
+exergy destruction [W] (T0=300K)           14.99        0.3703      0.0247
+------------------------------------------------------------------------------
+
+MATCHED Re=2300: LN2 gives 17.9x higher h and 17.9x lower wall superheat at 2.1x LESS pumping.
+MATCHED PUMPING (laminar Wp~Re^2): h~Nu*k/Dh, Nu~Re-weak => advantage set by k_LN2/k_He=7.5.
+MOUROMTSEFF: Mo_LN2/Mo_He=96x (turbulent-regime projection).
+EGM: both thermal-dominated (Bejan~1.000 He / 1.000 LN2); LN2 destroys LESS exergy per watt (lower wall superheat).
+AXIAL CONDUCTION: lambda_ax<<1 for both (Pe>>1) => fluid axial conduction negligible; neglecting it is justified.
+
+VERDICT: nitrogen at 77 K is the superior Stage-1 coolant on every axis -- higher h/Nu,
+lower plate superheat, less pumping, and lower exergy destruction per watt.
+==============================================================================

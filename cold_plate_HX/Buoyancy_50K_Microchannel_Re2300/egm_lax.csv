@@ -1,0 +1,2 @@
+case,fluid,Re,axial_Peclet,lambda_ax,Sgen_thermal_WK,Sgen_viscous_WK,Sgen_total_WK,Bejan_irrev,exergy_W
+Buoyancy_50K_Microchannel_Re2300,He_50K,2300,1761.8,0.000567601,0.049961236,1.3220747e-06,0.0499626,0.999973,14.9888

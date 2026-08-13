@@ -1,0 +1,45 @@
+======================================================================
+ GRID CONVERGENCE INDEX (GCI) -- Celik et al. 2008 (ASME)
+ Representative case: LN2 mini-channel, Re=2300, matched 9.4 W
+======================================================================
+ Meshes (cells):  fine N1=984150  medium N2=291600  coarse N3=86400
+ Refinement ratio: r21=1.5000  r32=1.5000  (both > 1.3, per Celik)
+----------------------------------------------------------------------
+
+ Nu:  fine=31.869  medium=33.017  coarse=33.61
+   apparent order p           = 1.631
+   Richardson extrapolated    = 30.644
+   approx. rel. error e_a21   = 3.603 %
+   extrapolated rel. err e_ext= 3.997 %
+   GCI_fine (21)              = 4.804 %
+   GCI_medium (32)            = 2.393 %
+   asymptotic-range ratio     = 0.257  (target ~1.0)
+   monotonic convergence
+
+ f_Darcy:  fine=0.12055  medium=0.11622  coarse=0.11078
+   apparent order p           = 0.564
+   Richardson extrapolated    = 0.1374
+   approx. rel. error e_a21   = 3.592 %
+   extrapolated rel. err e_ext= 12.260 %
+   GCI_fine (21)              = 17.467 %
+   GCI_medium (32)            = 22.774 %
+   asymptotic-range ratio     = 1.037  (target ~1.0)
+   monotonic convergence
+
+ h_W_m2K:  fine=444.89  medium=460.92  coarse=469.2
+   apparent order p           = 1.631
+   Richardson extrapolated    = 427.79
+   approx. rel. error e_a21   = 3.604 %
+   extrapolated rel. err e_ext= 3.998 %
+   GCI_fine (21)              = 4.805 %
+   GCI_medium (32)            = 2.394 %
+   asymptotic-range ratio     = 0.257  (target ~1.0)
+   monotonic convergence
+
+----------------------------------------------------------------------
+ VERDICT:
+   Nu GCI(fine) = 4.80%  (medium-mesh GCI = 2.39%)
+   f  GCI(fine) = 17.47%  (medium-mesh GCI = 22.77%)
+   Production medium (43,200 cells, the production mesh): Nu within 2.39% / f within 22.77% of
+   the grid-converged value -> review: GCI above target.
+======================================================================
