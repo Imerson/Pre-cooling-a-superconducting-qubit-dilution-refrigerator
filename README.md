@@ -97,4 +97,4 @@ Code and case dictionaries are released under the MIT Licence (see
 
 ## Contact
 
-Imerson Joao — ifnj2@cantab.ac.uk
+Imerson Joao — pemb7049@ox.ac.uk/ifnj2@cantab.ac.uk
